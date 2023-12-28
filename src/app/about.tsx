@@ -20,7 +20,7 @@ export default function About() {
     const y2 = useTransform(scrollYProgress, [0.1, 1], [-600, 800]);
 
     return (<div className="relative 
-    min-h-[120vh] bg-amber-200 z-30 overflow-hidden">
+    min-h-[120vh] bg-amber-200 z-30 overflow-hidden" id="about">
       <div className="absolute top-40 left-1/3 z-20">
         <motion.div 
                 ref={ref}

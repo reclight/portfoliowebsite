@@ -47,12 +47,12 @@ export default function Navbar() {
                 }`}
               >
                 <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                  <li className="text-gray-600 pb-6 text-xl py-5 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <li className="text-gray-600 pb-6 text-xl py-5 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-gray-900  border-gray-900  md:hover:text-gray-600 md:hover:bg-transparent">
                     <Link href="#about" onClick={() => setNavbar(!navbar)}>
                       About
                     </Link>
                   </li>
-                  <li className="text-gray-600 pb-6 text-xl py-5 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <li className="text-gray-600 pb-6 text-xl py-5 px-6 text-center  border-b-2 md:border-b-0  hover:bg-gray-600  border-gray-900  md:hover:text-gray-600 md:hover:bg-transparent">
                     <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                       Contact
                     </Link>

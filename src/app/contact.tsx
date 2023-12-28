@@ -20,7 +20,7 @@ export default function Contact() {
     const y1 = useTransform(scrollYProgress, [0.5, 1], [-300, 200]);
     const y2 = useTransform(scrollYProgress, [0.5, 1], [-300, 300]);
     return (
-      <div className="relative min-h-screen bg-sky-200 z-30 overflow-hidden">
+      <div className="relative min-h-screen bg-sky-200 z-30 overflow-hidden" id="contact">
       <div className="absolute top-64 left-1/3 z-10 ">
           
           <motion.div 
