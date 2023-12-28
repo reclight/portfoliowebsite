@@ -16,7 +16,7 @@ export default function Landing() {
       });
 
     const { scrollYProgress } = useScroll();
-    const y1 = useTransform(scrollYProgress, [0, 0.5], [0, 900]);
+    const y1 = useTransform(scrollYProgress, [0, 0.5], [-20, 900]);
     const y2 = useTransform(scrollYProgress, [0, 0.5], [0, 600]);
 
 
@@ -28,9 +28,9 @@ export default function Landing() {
                 <Image
                     src="/landing.gif"
                     alt="Landing Page"
-                    className="border-2 border-gray-950"
-                    width={1000}
-                    height={600}
+                    className="border border-gray-950"
+                    width={650}
+                    height={500}
                     priority
                 />
             </motion.div>
@@ -40,11 +40,11 @@ export default function Landing() {
                     transition={{ duration: 1, ease: 'easeOut' }}
                     ref={ref}
                     style={{ x: 0, y: y2}}>
-                    <div className="p-24 bg-white border-2 border-gray-950">
-                        <h1 className="text-7xl mb-3">
+                    <div className="p-12 bg-white border border-gray-950">
+                        <h1 className="text-5xl mb-3">
                             Hello 
                         </h1>
-                        <p className="text-xl">
+                        <p className="text-md">
                             My name is Ryan. I am a full stack developer.
                         </p>
                     </div>

@@ -17,7 +17,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between py-5 md:py-5 md:block">
                 {/* LOGO */}
                 <Link href="/">
-                  <h2 className="text-2xl text-gray-600 font-bold ">rec</h2>
+                  <h2 className="text-lg text-gray-600 font-bold ">rec</h2>
                 </Link>
                 {/* HAMBURGER BUTTON FOR MOBILE */}
                 <div className="md:hidden">
@@ -47,12 +47,12 @@ export default function Navbar() {
                 }`}
               >
                 <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                  <li className="text-gray-600 pb-6 text-xl py-5 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-gray-900  border-gray-900  md:hover:text-gray-600 md:hover:bg-transparent">
+                  <li className="text-gray-600 pb-6 text-md py-5 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-gray-900  border-gray-900  md:hover:text-gray-600 md:hover:bg-transparent">
                     <Link href="#about" onClick={() => setNavbar(!navbar)}>
                       About
                     </Link>
                   </li>
-                  <li className="text-gray-600 pb-6 text-xl py-5 px-6 text-center  border-b-2 md:border-b-0  hover:bg-gray-600  border-gray-900  md:hover:text-gray-600 md:hover:bg-transparent">
+                  <li className="text-gray-600 pb-6 text-md py-5 px-6 text-center  border-b-2 md:border-b-0  hover:bg-gray-600  border-gray-900  md:hover:text-gray-600 md:hover:bg-transparent">
                     <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                       Contact
                     </Link>

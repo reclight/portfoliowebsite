@@ -16,7 +16,7 @@ export default function About() {
       });
 
     const { scrollYProgress } = useScroll();
-    const y1 = useTransform(scrollYProgress, [0.1, 1], [-400, 1300]);
+    const y1 = useTransform(scrollYProgress, [0.1, 1], [-400, 1100]);
     const y2 = useTransform(scrollYProgress, [0.1, 1], [-600, 800]);
 
     return (<div className="relative 
@@ -25,13 +25,13 @@ export default function About() {
         <motion.div 
                 ref={ref}
                 style={{ x: 0, y: y1}}>
-          <div className="p-12 w-5/6 bg-white border-2 border-gray-950 ">
-            <h1 className="text-6xl mb-3">
+          <div className="p-12 w-3/4 bg-white border border-gray-950 ">
+            <h1 className="text-4xl mb-3">
               About
             </h1>
-            <p className="text-lg">My name is Ryan, I am a full stack developer at Micron Technology.</p>
+            <p className="text-sm">My name is Ryan, I am a full stack developer at Micron Technology.</p>
             
-            <p className="text-lg">I enjoy creating stuff, by using illustrating and coding.</p>
+            <p className="text-sm">I enjoy creating stuff, by using illustrating and coding.</p>
           </div>
         </motion.div>
       </div>
@@ -44,8 +44,8 @@ export default function About() {
                 src="/avatar.png"
                 alt="Landing Page"
                 className=""
-                width={600}
-                height={500}
+                width={400}
+                height={300}
                 priority
             />
         </motion.div>

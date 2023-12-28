@@ -17,8 +17,8 @@ export default function Contact() {
     });
 
     const { scrollYProgress } = useScroll();
-    const y1 = useTransform(scrollYProgress, [0.5, 1], [-300, 200]);
-    const y2 = useTransform(scrollYProgress, [0.5, 1], [-300, 300]);
+    const y1 = useTransform(scrollYProgress, [0.5, 1], [-300, 50]);
+    const y2 = useTransform(scrollYProgress, [0.5, 1], [-300, 200]);
     return (
       <div className="relative min-h-screen bg-sky-200 z-30 overflow-hidden" id="contact">
       <div className="absolute top-64 left-1/3 z-10 ">
@@ -30,8 +30,8 @@ export default function Contact() {
                 src="/tea.gif"
                 alt="tea"
                 className=""
-                width={200}
-                height={400}
+                width={150}
+                height={300}
                 priority
             />
           </motion.div>
@@ -42,10 +42,10 @@ export default function Contact() {
                 ref={ref}
                 style={{ x: 0, y: y2}}>
             <div className="p-6 w-96">
-              <h1 className="text-5xl mb-3">
+              <h1 className="text-4xl mb-3">
                 Contact
               </h1>
-              <p>These are my social media links</p>
+              <p className="mb-2">These are my social media links</p>
               <Link href="https://www.linkedin.com/in/ryanekacahaya/">
                 <motion.button
                   whileHover={{
