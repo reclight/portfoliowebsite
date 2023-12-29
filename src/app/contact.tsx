@@ -49,8 +49,9 @@ export default function Contact() {
               <Link href="https://www.linkedin.com/in/ryanekacahaya/">
                 <motion.button
                   whileHover={{
-                    scale: 1.2,
-                    transition: { duration: 1 },
+                    backgroundColor: "#000000",
+                    color: "#ffffff",
+                    transition: { duration: 0.31 },
                   }}
                   whileTap={{ scale: 0.9 }}
                   className="text-lg font-bold px-5 py-3 border-2 border-gray-950 my-2"
