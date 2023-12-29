@@ -4,6 +4,7 @@ import About from '@/app/about';
 import Image from 'next/image';
 import React, { useRef } from "react";
 import Contact from './contact';
+import Portfolio from './portfolio';
 
 export default async function Home() {
 

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Dimensions from 'next/'
 import { 
     useScroll,
     motion,
@@ -20,8 +21,9 @@ export default function Landing() {
     const y2 = useTransform(scrollYProgress, [0, 0.5], [0, 600]);
 
 
+
     return (<div className="relative min-h-[120vh] bg-orange-200 z-10 overflow-hidden">
-        <div className="absolute top-64 left-64 z-10 ">
+        <div className="absolute top-64 left-[5%] md:left-[20%] z-10 ">
             <motion.div 
                 ref={ref}
                 style={{ x: 0, y: y1}}>
